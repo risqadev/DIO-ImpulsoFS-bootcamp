@@ -1,6 +1,6 @@
 ### Arrays
 
-lista = []    # instanciar um novo array. duas formas:
+lista = []    # instanciar um novo array
 lista = Array.new
 # => []
 

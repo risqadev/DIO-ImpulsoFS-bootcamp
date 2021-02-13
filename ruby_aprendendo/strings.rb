@@ -1,15 +1,21 @@
-### Strings
+## Strings
 
-first_name = "Ediberto"   # atribuição com aspas (permite escape e interpolação)
+s = ""    # instanciar uma nova string
+s = String.new
+# => ""
+
+### Atribuição
+
+first_name = "Ediberto"   # com aspas (permite escape e interpolação)
 # => "Ediberto"
 
-middle_name = 'Silvério'  # atribuição com apóstrofes
+middle_name = 'Silvério'  # com apóstrofes
 # => "Silvério"
 
-last_name = %q(Reis)      # atribuição com %q()
+last_name = %q(Reis)      # com %q()
 # => "Reis"
 
-occupation = %Q(Engineer) # atribuição com %Q() (permite escape e interpolação)
+occupation = %Q(Engineer) # com %Q() (permite escape e interpolação)
 # => "Engineer"
 
 full_info = "#{first_name} #{middle_name} #{last_name}, #{15 + 17} anos" # interpolação de código em uma string, será executado antes da atribuição
@@ -21,6 +27,9 @@ message = <<~TAG
   O que estiver entre as 'TAG' será atribuído à variável, inclusive com caractertes de escape e interpolações.
 TAG
 # => "Atribuição usando heredoc.\n\nO que estiver entre as 'TAG' será atribuído à variável, inclusive com caractertes de escape.\n"
+
+
+### Alguns métodos
 
 puts String.public_methods  # vai exibir os métodos disponíveis para strings
 
@@ -60,7 +69,7 @@ occupation.downcase     # caixa baixa
 "strings separadas-no hífen".split("-")
 # ["strings separadas", "no hífen"]
 
-cpf = 145600
-p "O CPF é %011d" %cpf
-# O CPF é 00000145600
+numero = 145600
+p "O número é %09d" %numero
+# O número é 000145600
 # => nil
