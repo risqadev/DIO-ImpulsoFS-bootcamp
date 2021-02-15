@@ -75,3 +75,14 @@ when "javascript"
 else
   puts "Infelizmente não temos o seu curso"
 end
+
+
+### Atribuição condicional de variável
+
+variavel = nil
+
+variavel = "algum valor" if variavel == nil
+variavel = "algum valor" if !variavel
+variavel = "algum valor" unless variavel
+variavel ||= "algum valor"
+# => "algum valor"

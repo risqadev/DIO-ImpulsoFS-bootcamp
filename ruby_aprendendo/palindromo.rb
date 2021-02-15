@@ -1,9 +1,7 @@
 def palindromo(word)
   reversed = word.reverse
 
-  message = word == reversed ? "\"#{word.upcase}\" é palíndromo." : "\"#{word.upcase}\" não é palíndromo."
-
-  puts message
+  puts message = word == reversed ? "\"#{word.upcase}\" é palíndromo." : "\"#{word.upcase}\" não é palíndromo."
 end
 
 puts "Digite uma palvavra: "
