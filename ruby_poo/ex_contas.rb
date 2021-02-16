@@ -8,7 +8,7 @@ conta2 = ContaBancaria.new("Marcelo", 1000)
 
 
 # Operações
-conta2.transferir(conta1, 100)
+conta2.transferir(conta1, 995)
 
 conta1.transferir(conta2, 253.5)
 
