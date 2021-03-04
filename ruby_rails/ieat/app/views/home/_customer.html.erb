@@ -1,0 +1,20 @@
+<p>Prezado cliente, escolha abaixo o seu prato.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prato</th>
+      <th>Restaurante</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% Product.all.each do |product| %>
+    <tr>
+      <td><%= product.name %></td>
+      <td><%= product.restaurant.name %></td>
+      <td><%= product.value %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
