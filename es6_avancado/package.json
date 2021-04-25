@@ -3,8 +3,16 @@
   "type": "module",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
   "license": "MIT",
   "dependencies": {
     "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.16",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
   }
 }
